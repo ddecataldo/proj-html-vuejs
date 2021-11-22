@@ -1,0 +1,32 @@
+/* Background */
+
+/* Color */
+$primary: #fcdc31;
+$red: #ce1a26;
+$white: #fff;
+
+/* Flex */
+$d-flex: flex;
+$justify-content-between: space-between;
+$align-items-center: center;
+
+/* Container */
+.container {
+    width: 1248px;
+    max-width: 100%;
+    padding: 0 30px;
+    margin: auto;
+}
+
+/* Buttons */
+.btn{
+    text-transform: uppercase;
+    color: $white;
+    background-color: $red;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.btn-red{
+    padding: 10px 25px;
+}
