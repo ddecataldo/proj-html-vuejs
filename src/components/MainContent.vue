@@ -1,29 +1,27 @@
 <template>
     <main>
-        <!-- Punti di Forza -->
         <div class="container">
             <div class="row">
                 <div class="col col-md-12">
                     <div class="focus">
                         <ul>
-                        <li>
-                            <i class="fa fa-clock-o" aria-hidden="true"></i> <span>24/7 delivery</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-apple" aria-hidden="true"></i> <span>over 100 dishes</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-mobile" aria-hidden="true"></i> <span>in app ordering</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-car" aria-hidden="true"></i> <span>fast delivery</span>
-                        </li>
+                            <li>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> <span>24/7 delivery</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-apple" aria-hidden="true"></i> <span>over 100 dishes</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-mobile" aria-hidden="true"></i> <span>in app ordering</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-car" aria-hidden="true"></i> <span>fast delivery</span>
+                            </li>
                         </ul>  
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Titolo Box Piatti Popolari  -->
         <section class="section dishes">
             <div class="container">
                 <div class="row">
@@ -33,7 +31,6 @@
                 </div>
             </div>
         </section>
-        <!-- Box Piatti Popolari  -->
         <div class="container">
             <div class="row">
                 <div class="col col-md-4">
@@ -64,11 +61,8 @@
                 </div>
             </div>
         </div>
-        <!-- Parallax 01 -->
         <div class="parallax"></div>
-        <!-- Menu Categories -->
         <div class="container menu-categories">
-            <!-- Title -->
             <div class="row section">
                 <div class="col col-md-9 col-sm-9 col-xs-12">
                     <h2 class="title">Menu Categories</h2>
@@ -77,7 +71,6 @@
                     <p class="text-right"><a class="btn btn-red" href="#">view the full menu <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
                 </div>
             </div>
-            <!-- Box -->
             <div class="row section pt0 pb24">
                 <div class="col col-md-3 col-sm-6 col-xs-12">
                     <div class="bkg-categories categories-01"><span>appetizers</span></div>
@@ -105,7 +98,6 @@
                 </div>
             </div>
         </div>
-        <!-- Icone -->
         <div class="container">
             <div class="row section row-icon pt0">
                 <div class="col-md-3 col-sm-6 col-xs-12 text-center">
@@ -126,7 +118,6 @@
                 </div>
             </div>
         </div>
-        <!-- Parallax 02 -->
         <div class="banner_app">
             <div class="container">
                 <div class="row">
@@ -141,9 +132,7 @@
                 </div>
             </div>
         </div>
-        <!-- News -->
         <div class="container news-section">
-            <!-- Title -->
             <div class="row section">
                 <div class="col col-md-9 col-sm-9 col-xs-12">
                     <h2 class="title">Latest News</h2>
@@ -152,7 +141,6 @@
                     <p class="text-right"><a class="btn btn-red" href="#">read more news <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
                 </div>
             </div>
-            <!-- Box -->
             <div class="row section pt0 pb24">
                 <div class="col col-md-6 col-sm-6 col-xs-12">
                     <div class="card_news">
@@ -179,7 +167,7 @@
 
 <script>
 export default {
-   name: "Main",
+   name: "MainContent",
 }
 </script>
 
