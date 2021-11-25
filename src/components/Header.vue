@@ -111,6 +111,10 @@ nav{
     padding-left:15px;
     padding-right:15px;
   }
+
+  ul li a.active{
+    color: #fcdc31;
+  }
 }
 
 /* Slider */

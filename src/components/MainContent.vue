@@ -33,25 +33,13 @@
         </section>
         <div class="container">
             <div class="row">
-                <div class="col col-md-4">
+                <div class="col col-md-4"
+                v-for="(dishes, i) in popularDishes"
+                :key="i">
                     <div class="card-dishes">
-                        <div class="bkg-dishes dishes-01"></div>
-                        <h3 class="title-dishes">Skin On Fries</h3>
-                        <p class="text-center price">$3.00 – $6.00</p>
-                    </div>
-                </div>
-                <div class="col col-md-4">
-                    <div class="card-dishes">
-                        <div class="bkg-dishes dishes-02"></div>
-                        <h3 class="title-dishes">Choco Cookie Frappe</h3>
-                        <p class="text-center price">$4.99</p>
-                    </div>
-                </div>
-                <div class="col col-md-4">
-                    <div class="card-dishes">
-                        <div class="bkg-dishes dishes-03"></div>
-                        <h3 class="title-dishes">The Donut Burger</h3>
-                        <p class="text-center price">$6.99</p>
+                        <div class="bkg-dishes" :class="dishes.class"></div>
+                        <h3 class="title-dishes">{{ dishes.title }}</h3>
+                        <p class="text-center price">{{ dishes.price }}</p>
                     </div>
                 </div>
             </div>
@@ -72,29 +60,10 @@
                 </div>
             </div>
             <div class="row section pt0 pb24">
-                <div class="col col-md-3 col-sm-6 col-xs-12">
-                    <div class="bkg-categories categories-01"><span>appetizers</span></div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-xs-12">
-                    <div class="bkg-categories categories-02"><span>burgers</span></div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-xs-12">
-                    <div class="bkg-categories categories-03"><span>pizzas</span></div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-xs-12">
-                    <div class="bkg-categories categories-04"><span>fries</span></div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-xs-12">
-                    <div class="bkg-categories categories-05"><span>sides</span></div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-xs-12">
-                    <div class="bkg-categories categories-06"><span>desserts</span></div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-xs-12">
-                    <div class="bkg-categories categories-07"><span>beverages</span></div>
-                </div>
-                <div class="col col-md-3 col-sm-6 col-xs-12">
-                    <div class="bkg-categories categories-08"><span>specials</span></div>
+                <div class="col col-md-3 col-sm-6 col-xs-12"
+                v-for="(menu, i) in categoriesMenu"
+                :key="i">
+                    <div class="bkg-categories" :class="menu.class"><span>{{ menu.title }}</span></div>
                 </div>
             </div>
         </div>
@@ -168,6 +137,61 @@
 <script>
 export default {
    name: "MainContent",
+   data(){
+        return{
+            popularDishes: [
+                {
+                    class: "dishes-01",
+                    title: "Skin On Fries",
+                    price: "$3.00 – $6.00"
+                },
+                {
+                    class: "dishes-02",
+                    title: "Choco Cookie Frappe",
+                    price: "$4.99"
+                },
+                {
+                    class: "dishes-03",
+                    title: "The Donut Burger",
+                    price: "$6.99"
+                },
+            ],
+            categoriesMenu: [
+                {
+                    class: "categories-01",
+                    title: "appetizers",
+                },
+                {
+                    class: "categories-02",
+                    title: "burgers",
+                },
+                {
+                    class: "categories-03",
+                    title: "pizzas",
+                },
+                {
+                    class: "categories-04",
+                    title: "fries",
+                },
+                {
+                    class: "categories-05",
+                    title: "sides",
+                },
+                {
+                    class: "categories-06",
+                    title: "desserts",
+                },
+                {
+                    class: "categories-07",
+                    title: "beverages",
+                },
+                {
+                    class: "categories-08",
+                    title: "specials",
+                },
+            ],
+        };
+    },
 }
 </script>
 
